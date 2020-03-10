@@ -14,6 +14,15 @@ class ViewController: UIViewController { //representativo da tela em si, toda pa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+//        var BoloFelicidade: Receita!
+//        BoloFelicidade = Receita ()
+//        BoloFelicidade.nome = "Bolo Felicidade"
+//        BoloFelicidade.modoDePreparo = "Faca a b c d e"
+//        BoloFelicidade.ingrediantes.append(3, "Leite em Po", "kg")
+//        BoloFelicidade.ingrediantes.append(2, "Macarrao Integral", "kg")
+//        BoloFelicidade.ingrediantes.append(4, "Leite de Coco", "ml")
+        
+        
         // Do any additional setup after loading the view.
     }
     
@@ -57,5 +66,32 @@ class ViewController: UIViewController { //representativo da tela em si, toda pa
     }
     
     
+}
+///Comentarios sobre documentacao de receita
+class Receita {
+    var ingredientes: [Ingrediente]
+    var nome: String = ""
+    var modoDePreparo: String = ""
+    
+    init(ingredientes: Array<Ingrediente>, nome: String, modoDePreparo: String) {
+        self.ingredientes = ingredientes
+        self.nome = nome
+        self.modoDePreparo = modoDePreparo
+        
+    }
+    
+
+    
+}
+class Ingrediente {
+    var qtd: Int = 0
+    var nome: String = ""
+    var unidadeDeMedida: String = ""
+    
+    init(qtd: Int, nome: String, unidadeDeMedida: String) {
+        self.qtd = qtd
+        self.nome = nome
+        self.unidadeDeMedida = unidadeDeMedida
+    }
 }
 
