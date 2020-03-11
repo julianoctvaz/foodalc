@@ -93,6 +93,7 @@
                         <outlet property="qtdDePessoasTextFild" destination="ymp-RA-3QB" id="sj6-mn-twN"/>
                         <outlet property="qtdDePorcoes" destination="jUe-G6-xGM" id="RTT-4l-Akr"/>
                         <outlet property="saidaPorcoesPorPessoas" destination="HNn-CI-nbS" id="bta-ZH-WLJ"/>
+                        <outlet property="sizePicker" destination="AzZ-XN-Pin" id="rcb-w9-l2X"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,8 +8,17 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIPickerViewDataSource {
+class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     //obg ter essa funcao ao usar pickerview
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+    /*    if component == 0 {
+            return "Componente específico"
+            //se eu tivesse outras colunas eu teria que fazer o row, por exemplo, dentro desse bloco
+        }
+        else{*/
+            return "Bolo Felicidade"
+        }
+  
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -23,6 +32,8 @@ class ViewController: UIViewController, UIPickerViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        sizePicker.dataSource = self
+        sizePicker.delegate = self
         //        var BoloFelicidade: Receita!
         //        BoloFelicidade = Receita ()
         //        BoloFelicidade.nome = "Bolo Felicidade"
@@ -38,7 +49,9 @@ class ViewController: UIViewController, UIPickerViewDataSource {
     @IBOutlet var qtdDePessoasTextFild: UITextField!
     @IBOutlet var qtdDePorcoes: UITextField!
     @IBOutlet var saidaPorcoesPorPessoas: UILabel!
+    @IBOutlet var sizePicker: UIPickerView!
     
+  
     @IBAction func calculaAgora() {
         calcularPorcoesPorPessoa()
     }
