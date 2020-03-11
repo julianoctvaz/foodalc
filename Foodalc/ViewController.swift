@@ -8,19 +8,28 @@
 
 import UIKit
 
-class ViewController: UIViewController { //representativo da tela em si, toda parte de tela vai ter um arquivo como esse cxhamdo view controller.
+class ViewController: UIViewController, UIPickerViewDataSource {
+    //obg ter essa funcao ao usar pickerview
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    //obg ter essa funcao ao usar pickerview
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return 3
+    }
+    //representativo da tela em si, toda parte de tela vai ter um arquivo como esse cxhamdo view controller.
     
- 
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-//        var BoloFelicidade: Receita!
-//        BoloFelicidade = Receita ()
-//        BoloFelicidade.nome = "Bolo Felicidade"
-//        BoloFelicidade.modoDePreparo = "Faca a b c d e"
-//        BoloFelicidade.ingrediantes.append(3, "Leite em Po", "kg")
-//        BoloFelicidade.ingrediantes.append(2, "Macarrao Integral", "kg")
-//        BoloFelicidade.ingrediantes.append(4, "Leite de Coco", "ml")
+        //        var BoloFelicidade: Receita!
+        //        BoloFelicidade = Receita ()
+        //        BoloFelicidade.nome = "Bolo Felicidade"
+        //        BoloFelicidade.modoDePreparo = "Faca a b c d e"
+        //        BoloFelicidade.ingrediantes.append(3, "Leite em Po", "kg")
+        //        BoloFelicidade.ingrediantes.append(2, "Macarrao Integral", "kg")
+        //        BoloFelicidade.ingrediantes.append(4, "Leite de Coco", "ml")
         
         
         // Do any additional setup after loading the view.
@@ -41,7 +50,7 @@ class ViewController: UIViewController { //representativo da tela em si, toda pa
         
         let qtdPessoas:Int = Int(qtdPessoasLendo)!
         let qtdPorcoes:Int = Int(qtdPorcoesLendo)!
-    
+        
         
         saidaPorcoesPorPessoas.text = String(qtdPessoas * qtdPorcoes)
         //multiplica quantidade de porcoes por pessoa.
@@ -62,36 +71,15 @@ class ViewController: UIViewController { //representativo da tela em si, toda pa
     @IBAction func mostraReceitas(_ sender: Any) {
         
         print("Hello Mundo")
-
-    }
-    
-    
-}
-///Comentarios sobre documentacao de receita
-class Receita {
-    var ingredientes: [Ingrediente]
-    var nome: String = ""
-    var modoDePreparo: String = ""
-    
-    init(ingredientes: Array<Ingrediente>, nome: String, modoDePreparo: String) {
-        self.ingredientes = ingredientes
-        self.nome = nome
-        self.modoDePreparo = modoDePreparo
         
     }
     
+    
+}
 
     
-}
-class Ingrediente {
-    var qtd: Int = 0
-    var nome: String = ""
-    var unidadeDeMedida: String = ""
     
-    init(qtd: Int, nome: String, unidadeDeMedida: String) {
-        self.qtd = qtd
-        self.nome = nome
-        self.unidadeDeMedida = unidadeDeMedida
-    }
-}
+    
+
+
 
