@@ -11,14 +11,23 @@ import UIKit
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     //obg ter essa funcao ao usar pickerview
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-    /*    if component == 0 {
-            return "Componente específico"
-            //se eu tivesse outras colunas eu teria que fazer o row, por exemplo, dentro desse bloco
-        }
-        else{*/
+        /*    if component == 0 {
+         return "Componente específico"
+         //se eu tivesse outras colunas eu teria que fazer o row, por exemplo, dentro desse bloco
+         }
+         else{*/
+        if row == 0{
             return "Bolo Felicidade"
         }
-  
+        else if row == 1{
+            return "Torta de Limao"
+        }
+        else{
+            return "Trufa"
+        }
+        //aqui pode usar return array[row]
+    }
+    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -51,7 +60,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     @IBOutlet var saidaPorcoesPorPessoas: UILabel!
     @IBOutlet var sizePicker: UIPickerView!
     
-  
+    
     @IBAction func calculaAgora() {
         calcularPorcoesPorPessoa()
     }
@@ -90,9 +99,9 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
 }
 
-    
-    
-    
+
+
+
 
 
 
