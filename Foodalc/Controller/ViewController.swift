@@ -38,6 +38,8 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     //representativo da tela em si, toda parte de tela vai ter um arquivo como esse cxhamdo view controller.
     
+    var ingrediente1 = Ingrediente(nome: "F de T", qtd: 1, unidade: 2.0, unidadeDeMedida: "kg")
+    var ingrendiente2 = Ingrediente(nome: "L de C", qtd: 200, unidade: 2.0, unidadeDeMedida: "ml")
     
     
     override func viewDidLoad() {
@@ -56,7 +58,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     fileprivate func getData(){
-        let url = URL(String: "https://github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json")
+    // let url = URL(String:github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json\)
         
         
     }
