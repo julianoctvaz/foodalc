@@ -52,8 +52,13 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         //        BoloFelicidade.ingrediantes.append(2, "Macarrao Integral", "kg")
         //        BoloFelicidade.ingrediantes.append(4, "Leite de Coco", "ml")
         
-        
         // Do any additional setup after loading the view.
+    }
+    
+    fileprivate func getData(){
+        let url = URL(String: "https://github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json")
+        
+        
     }
     
     @IBOutlet var qtdDePessoasTextFild: UITextField!
