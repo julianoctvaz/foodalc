@@ -8,6 +8,13 @@
 
 import UIKit
 
+struct ingrediente: Decodable{
+    let nome: String
+    let qtd: Int
+    let unidade: Float
+    let unidadeDeMedida: String
+}
+
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     //obg ter essa funcao ao usar pickerview
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
@@ -25,7 +32,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         else{
             return "Trufa"
         }
-//        var receitas []
+        //        var receitas []
         //aqui pode usar return array[row]
     }
     
@@ -58,7 +65,20 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     
     fileprivate func getData(){
-    // let url = URL(String:github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json\)
+//        let url = "https://github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json/"
+//        let urlObj = URL(string: url)
+//        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
+//
+//            do {
+//                var ingredientes = try JSONDecoder().decode([ingrediente].self, from: data!)
+//
+//                for ingrediente in ingredientes{
+//                }
+//                
+//            }catch{
+//                print("We get an error")
+//            }
+//        }.resume()
         
         
     }
@@ -106,10 +126,3 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     
     
 }
-
-
-
-
-
-
-
