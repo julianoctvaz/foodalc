@@ -1,126 +1,110 @@
-
 {
-    "Receitas":[
+    "Estoque":[
         {
-            "nome": "Bolo Felicidade",
-            "ingredientes":[
-                {
-                    "nome": "Farinha de Trigo"
-                    "qtd": "1"
-                    "unidade": "2"
-                    "unidadeDeMedida": "kg"
-                    
-                },
-                {
-                    "nome": "Leite de coco"
-                    "qtd": "200"
-                     "unidade": "2"
-                    "unidadeDeMedida": "ml"
-                },
-                {
-                    "nome": "Fermento"
-                    "qtd": "20"
-                     "unidade": "2"
-                    "unidadeDeMedida": "g"
-                },
-                {
-                    "nome": "Ovo"
-                    "qtd": "1"
-                    "unidade": "6"
-                    "unidadeDeMedida": "unidade"
-                }
-            ],
-            "modoDePreparo": ""
-        },
-        {ß
-            "nome": "Torta de Limao",
-            "ingredientes":[
-                {
-                    "nome": "Limao"
-                    "qtd": "1"
-                     "unidade": "3"
-                    "unidadeDeMedida": "unidade"
-                },
-                {
-                    "nome": "Ricota"
-                    "qtd": "200"
-                     "unidade": "2"
-                    "unidadeDeMedida": "g"
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                }
-            ],
-            "modoDePreparo": ""
-        },
-        {
-            "nome": "Pao de Queijo",
-            "ingredientes":[
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                }
-            ],
-            "modoDePreparo": ""
-        },
-        {
-            "nome": "Sorvete de Chocolate",
-            "ingredientes":[
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                     "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                },
-                {
-                    "nome": ""
-                    "qtd": ""
-                    "unidade": "2"
-                    "unidadeDeMedida": ""
-                }
-            ],
-            "modoDePreparo": ""
+            {
+                "nome": "Farinha de Trigo"
+                "qtd": "1"
+                "unidade": "2"
+                "unidadeDeMedida": "kg"
+                
+            },
+            {
+                "nome": "Leite de coco"
+                "qtd": "200"
+                "unidade": "2"
+                "unidadeDeMedida": "ml"
+            },
+            {
+                "nome": "Fermento"
+                "qtd": "20"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Ovo"
+                "qtd": "1"
+                "unidade": "6"
+                "unidadeDeMedida": "unidade"
+            },
+            {
+                "nome": "Limao"
+                "qtd": "1"
+                "unidade": "3"
+                "unidadeDeMedida": "unidade"
+            },
+            {
+                "nome": "Ricota"
+                "qtd": "200"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Leite condensado"
+                "qtd": "375"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Creme de leite"
+                "qtd": "200"
+                "unidade": "1"
+                "unidadeDeMedida": "g"
+            },
+            {
+                
+                "nome": "Farinha de rosca"
+                "qtd": "2"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Farinha de Trigo"
+                "qtd": "100"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Queijo"
+                "qtd": "200"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Ovos"
+                "qtd": "1"
+                "unidade": "2"
+                "unidadeDeMedida": "unidade"
+            },
+            {
+                "nome": "Chocolate em pó"
+                "qtd": "400"
+                "unidade": "1"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Gelatina em pó"
+                "qtd": "25"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Chocolate em barra"
+                "qtd": "200"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Margarina"
+                "qtd": "250"
+                "unidade": "2"
+                "unidadeDeMedida": "g"
+            },
+            {
+                "nome": "Banana"
+                "qtd": "1"
+                "unidade": "12"
+                "unidadeDeMedida": "unidade"
+            },
+            
+            ]
         }
-    ]
-}

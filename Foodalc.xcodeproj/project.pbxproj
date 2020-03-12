@@ -10,6 +10,7 @@
 		B1E17C172417C79500D99E73 /* estoque.json in Resources */ = {isa = PBXBuildFile; fileRef = B1E17C162417C79500D99E73 /* estoque.json */; };
 		B1E17C192417DCC700D99E73 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E17C182417DCC700D99E73 /* Receita.swift */; };
 		B1E17C1B2417DCFD00D99E73 /* Ingrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E17C1A2417DCFD00D99E73 /* Ingrediente.swift */; };
+		B1FB38A1241A65F8003EED38 /* receitas.json in Resources */ = {isa = PBXBuildFile; fileRef = B1FB38A0241A65F8003EED38 /* receitas.json */; };
 		B1FEDD1B240D30D600158420 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FEDD1A240D30D600158420 /* AppDelegate.swift */; };
 		B1FEDD1D240D30D600158420 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FEDD1C240D30D600158420 /* SceneDelegate.swift */; };
 		B1FEDD1F240D30D600158420 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FEDD1E240D30D600158420 /* ViewController.swift */; };
@@ -22,6 +23,7 @@
 		B1E17C162417C79500D99E73 /* estoque.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = estoque.json; sourceTree = "<group>"; };
 		B1E17C182417DCC700D99E73 /* Receita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
 		B1E17C1A2417DCFD00D99E73 /* Ingrediente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingrediente.swift; sourceTree = "<group>"; };
+		B1FB38A0241A65F8003EED38 /* receitas.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = receitas.json; sourceTree = "<group>"; };
 		B1FEDD17240D30D600158420 /* Foodalc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodalc.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1FEDD1A240D30D600158420 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B1FEDD1C240D30D600158420 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -43,6 +45,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B1FB38A2241A660E003EED38 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		B1FB38A3241A663F003EED38 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B1E17C1A2417DCFD00D99E73 /* Ingrediente.swift */,
+				B1E17C182417DCC700D99E73 /* Receita.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B1FB38A5241A667E003EED38 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B1FEDD23240D30DA00158420 /* Assets.xcassets */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		B1FB38A6241A6687003EED38 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B1FEDD20240D30D600158420 /* Main.storyboard */,
+				B1FEDD25240D30DA00158420 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		B1FEDD0E240D30D600158420 = {
 			isa = PBXGroup;
 			children = (
@@ -62,16 +97,16 @@
 		B1FEDD19240D30D600158420 /* Foodalc */ = {
 			isa = PBXGroup;
 			children = (
+				B1FB38A6241A6687003EED38 /* View */,
+				B1FB38A5241A667E003EED38 /* Controller */,
 				B1FEDD1A240D30D600158420 /* AppDelegate.swift */,
 				B1FEDD1C240D30D600158420 /* SceneDelegate.swift */,
 				B1FEDD1E240D30D600158420 /* ViewController.swift */,
-				B1FEDD20240D30D600158420 /* Main.storyboard */,
-				B1FEDD23240D30DA00158420 /* Assets.xcassets */,
-				B1E17C162417C79500D99E73 /* estoque.json */,
-				B1FEDD25240D30DA00158420 /* LaunchScreen.storyboard */,
 				B1FEDD28240D30DA00158420 /* Info.plist */,
-				B1E17C182417DCC700D99E73 /* Receita.swift */,
-				B1E17C1A2417DCFD00D99E73 /* Ingrediente.swift */,
+				B1FB38A3241A663F003EED38 /* Model */,
+				B1FB38A2241A660E003EED38 /* Database */,
+				B1E17C162417C79500D99E73 /* estoque.json */,
+				B1FB38A0241A65F8003EED38 /* receitas.json */,
 			);
 			path = Foodalc;
 			sourceTree = "<group>";
@@ -135,6 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B1FEDD27240D30DA00158420 /* LaunchScreen.storyboard in Resources */,
+				B1FB38A1241A65F8003EED38 /* receitas.json in Resources */,
 				B1FEDD24240D30DA00158420 /* Assets.xcassets in Resources */,
 				B1E17C172417C79500D99E73 /* estoque.json in Resources */,
 				B1FEDD22240D30D600158420 /* Main.storyboard in Resources */,

@@ -25,6 +25,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         else{
             return "Trufa"
         }
+//        var receitas []
         //aqui pode usar return array[row]
     }
     
