@@ -20,4 +20,6 @@ class Ingrediente {
         self.unidade = unidade
         self.unidadeDeMedida = unidadeDeMedida
     }
+    
+    //getters and setters
 }

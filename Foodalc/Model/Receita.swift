@@ -20,4 +20,6 @@ class Receita {
         self.modoDePreparo = modoDePreparo
         
     }
+    
+    //getters and setters
 }

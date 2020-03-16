@@ -67,7 +67,6 @@
 				B1FEDD1A240D30D600158420 /* AppDelegate.swift */,
 				B1FEDD1C240D30D600158420 /* SceneDelegate.swift */,
 				B1FEDD1E240D30D600158420 /* ViewController.swift */,
-				B1FEDD28240D30DA00158420 /* Info.plist */,
 				B1FEDD23240D30DA00158420 /* Assets.xcassets */,
 			);
 			path = Controller;
@@ -101,6 +100,7 @@
 		B1FEDD19240D30D600158420 /* Foodalc */ = {
 			isa = PBXGroup;
 			children = (
+				B1FEDD28240D30DA00158420 /* Info.plist */,
 				B1FB38A6241A6687003EED38 /* View */,
 				B1FB38A5241A667E003EED38 /* Controller */,
 				B1FB38A3241A663F003EED38 /* Model */,

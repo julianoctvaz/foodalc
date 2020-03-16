@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
 //  Foodalc
-//
 //  Created by Juliano Vaz on 02/03/20.
 //  Copyright © 2020 Juliano Vaz. All rights reserved.
 //
@@ -16,6 +15,24 @@ struct ingrediente: Decodable{
 }
 
 class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+    
+    //--------------------------------------------- only variables, arrays and outlet -----------------------------------------
+    
+    @IBOutlet var qtdDePessoasTextFild: UITextField!
+    @IBOutlet var qtdDePorcoes: UITextField!
+    @IBOutlet var saidaPorcoesPorPessoas: UILabel!
+    @IBOutlet var sizePicker: UIPickerView!
+    @IBOutlet var viewEstoque: UIView!
+    @IBOutlet var viewReceitas: UIView!
+    @IBOutlet var viewPrincipal: UIView!
+    
+    var ingrediente1 = Ingrediente(nome: "F de T", qtd: 1, unidade: 2.0, unidadeDeMedida: "kg")
+    var ingrendiente2 = Ingrediente(nome: "L de C", qtd: 200, unidade: 2.0, unidadeDeMedida: "ml")
+    
+    var receitasParaPicker: [String] = ["Bolo Fecilidade", "Torta de Limao", "Trufa"]
+    
+    
+    //--------------------------------------------- only pickerView ---------------------------------------------------
     //obg ter essa funcao ao usar pickerview
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         /*    if component == 0 {
@@ -23,18 +40,28 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
          //se eu tivesse outras colunas eu teria que fazer o row, por exemplo, dentro desse bloco
          }
          else{*/
-        if row == 0{
-            return "Bolo Felicidade"
-        }
-        else if row == 1{
-            return "Torta de Limao"
-        }
-        else{
-            return "Trufa"
-        }
-        //        var receitas []
+        
+        //        if row == 0{
+        //            return "Bolo Felicidade"
+        //        }
+        //        else if row == 1{
+        //            return "Torta de Limao"
+        //        }
+        //        else{
+        //            return "Trufa"
+        //        }
+        
+        return  receitasParaPicker[row]
         //aqui pode usar return array[row]
     }
+    
+    //    func pickerView(pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusingView view: UIView?) -> UIView {
+    //
+    //        let pickerLabel = UILabel()
+    //        pickerLabel.font = UIFont(name:"Helvetica", size: 7)
+    //
+    //        return pickerLabel
+    //    }
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
@@ -45,14 +72,17 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
     }
     //representativo da tela em si, toda parte de tela vai ter um arquivo como esse cxhamdo view controller.
     
-    var ingrediente1 = Ingrediente(nome: "F de T", qtd: 1, unidade: 2.0, unidadeDeMedida: "kg")
-    var ingrendiente2 = Ingrediente(nome: "L de C", qtd: 200, unidade: 2.0, unidadeDeMedida: "ml")
+    //--------------------------------------------- initializer  ----------------------------------------------------
     
-    
+    /// Do any additional setup after loading the view.
     override func viewDidLoad() {
+        print("Hello Mundo") //para dar sorte
         super.viewDidLoad()
         sizePicker.dataSource = self
         sizePicker.delegate = self
+        sizePicker.isHidden = true
+        viewPrincipal.isHidden = false
+        
         //        var BoloFelicidade: Receita!
         //        BoloFelicidade = Receita ()
         //        BoloFelicidade.nome = "Bolo Felicidade"
@@ -61,37 +91,64 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         //        BoloFelicidade.ingrediantes.append(2, "Macarrao Integral", "kg")
         //        BoloFelicidade.ingrediantes.append(4, "Leite de Coco", "ml")
         
-        // Do any additional setup after loading the view.
-    }
-    
-    fileprivate func getData(){
-//        let url = "https://github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json/"
-//        let urlObj = URL(string: url)
-//        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
-//
-//            do {
-//                var ingredientes = try JSONDecoder().decode([ingrediente].self, from: data!)
-//
-//                for ingrediente in ingredientes{
-//                }
-//                
-//            }catch{
-//                print("We get an error")
-//            }
-//        }.resume()
-        
         
     }
     
-    @IBOutlet var qtdDePessoasTextFild: UITextField!
-    @IBOutlet var qtdDePorcoes: UITextField!
-    @IBOutlet var saidaPorcoesPorPessoas: UILabel!
-    @IBOutlet var sizePicker: UIPickerView!
+    //--------------------------------------------- only to get estatic data -------------------------------------
     
+    //    fileprivate func getData(){
+    //        let url = "https://github.com/julianoctvaz/foodalc/blob/master/Foodalc/estoque.json/"
+    //        let urlObj = URL(string: url)
+    //        URLSession.shared.dataTask(with: urlObj!) {(data, response, error) in
+    //
+    //            do {
+    //                  Decode data to object
+    //                var ingredientes = try JSONDecoder().decode([ingrediente].self, from: data!)
+    //
+    //                for ingrediente in ingredientes{
+    //                    print("Nome: \(ingrediente.nome)")
+    //                    print("Quantidade: \(ingrediente.qtd)")
+    //                    print("Unidade: \(ingrediente.unidade)")
+    //                    print("Unidade de medida: \(ingrediente.unidadeDeMedida)")
+    //                }
+    //
+    //            }catch{
+    //                print("We get an error")
+    //            }
+    //        }.resume()
+    //  }
+    
+    //--------------------------------------------- only IBActions --------------------------------------------------
     
     @IBAction func calculaAgora() {
         calcularPorcoesPorPessoa()
+        sizePicker.isHidden = false
     }
+    
+    @IBAction func mostraReceitas(_ sender: Any) {
+        
+    }
+    
+    @IBAction func estoqueButton() {
+        viewPrincipal.isHidden = true
+        viewEstoque.isHidden = false
+        viewReceitas.isHidden = true
+    }
+    
+    @IBAction func principalButton() {
+        viewPrincipal.isHidden = false
+        viewEstoque.isHidden = true
+        viewReceitas.isHidden = true
+    }
+    
+    @IBAction func receitasButton() {
+        viewPrincipal.isHidden = true
+        viewEstoque.isHidden = true
+        viewReceitas.isHidden = false
+    }
+    
+    
+    //--------------------------------------------- only func -----------------------------------------------------
     
     func calcularPorcoesPorPessoa(){
         
@@ -100,7 +157,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         
         let qtdPessoas:Int = Int(qtdPessoasLendo)!
         let qtdPorcoes:Int = Int(qtdPorcoesLendo)!
-        
         
         saidaPorcoesPorPessoas.text = String(qtdPessoas * qtdPorcoes)
         //multiplica quantidade de porcoes por pessoa.
@@ -118,11 +174,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         //mostra as receitas que estão disponiveis para serem feitas dados os calculos e disponibilidade de estoque.
     }
     
-    @IBAction func mostraReceitas(_ sender: Any) {
-        
-        print("Hello Mundo")
-        
-    }
-    
     
 }
+//--------------------------------------------- end --------------------------------------------------------------
