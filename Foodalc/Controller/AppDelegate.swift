@@ -28,7 +28,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
     }
 
-    // nao ta rolando...
+    // nao ta rolando... 
     
     //cansei*/
 

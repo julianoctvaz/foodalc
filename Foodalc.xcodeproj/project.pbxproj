@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B1AE2E1C24246FE3008C94B0 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B1AE2E1B24246FE2008C94B0 /* icon.png */; };
 		B1E17C172417C79500D99E73 /* estoque.json in Resources */ = {isa = PBXBuildFile; fileRef = B1E17C162417C79500D99E73 /* estoque.json */; };
 		B1E17C192417DCC700D99E73 /* Receita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E17C182417DCC700D99E73 /* Receita.swift */; };
 		B1E17C1B2417DCFD00D99E73 /* Ingrediente.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E17C1A2417DCFD00D99E73 /* Ingrediente.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B1AE2E1B24246FE2008C94B0 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = Foodalc/icon.png; sourceTree = SOURCE_ROOT; };
 		B1E17C162417C79500D99E73 /* estoque.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = estoque.json; sourceTree = "<group>"; };
 		B1E17C182417DCC700D99E73 /* Receita.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Receita.swift; sourceTree = "<group>"; };
 		B1E17C1A2417DCFD00D99E73 /* Ingrediente.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingrediente.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				B1FEDD20240D30D600158420 /* Main.storyboard */,
 				B1FEDD25240D30DA00158420 /* LaunchScreen.storyboard */,
+				B1AE2E1B24246FE2008C94B0 /* icon.png */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -171,6 +174,7 @@
 			files = (
 				B1FEDD27240D30DA00158420 /* LaunchScreen.storyboard in Resources */,
 				B1FB38A1241A65F8003EED38 /* receitas.json in Resources */,
+				B1AE2E1C24246FE3008C94B0 /* icon.png in Resources */,
 				B1FEDD24240D30DA00158420 /* Assets.xcassets in Resources */,
 				B1E17C172417C79500D99E73 /* estoque.json in Resources */,
 				B1FEDD22240D30D600158420 /* Main.storyboard in Resources */,
