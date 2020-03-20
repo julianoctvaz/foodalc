@@ -34,14 +34,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Quantidade de pessoas" textAlignment="natural" minimumFontSize="17" background="balaoDeTexto" translatesAutoresizingMaskIntoConstraints="NO" id="ymp-RA-3QB" userLabel="Qtd De Pessoas">
-                                        <rect key="frame" x="51" y="60" width="283" height="34"/>
+                                        <rect key="frame" x="43" y="60" width="291" height="39"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder=" Quantidade de porções" textAlignment="natural" minimumFontSize="17" background="balaoDeTexto" translatesAutoresizingMaskIntoConstraints="NO" id="jUe-G6-xGM">
-                                        <rect key="frame" x="51" y="140" width="283" height="34"/>
+                                        <rect key="frame" x="43" y="136" width="291" height="38"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -60,7 +60,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTd-l5-wmh">
-                                        <rect key="frame" x="223" y="208" width="127" height="31"/>
+                                        <rect key="frame" x="223" y="208" width="127" height="40"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <state key="normal" image="ButtonCalcular">
@@ -166,6 +166,6 @@
         <image name="iconEstoque" width="43" height="29"/>
         <image name="iconPrincipal" width="28" height="25"/>
         <image name="iconReceita" width="26" height="30"/>
-        <image name="iconTransparente" width="394" height="420"/>
+        <image name="iconTransparente" width="197" height="210"/>
     </resources>
 </document>
