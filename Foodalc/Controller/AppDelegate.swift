@@ -10,7 +10,27 @@ import UIKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    /*tentando fazer launchScreenRodar
+    
+    var window: UIWindow?
+    
+    private func splashScreen() {
+        let launchScreenVC = UIStoryboard.init(name: "LaunchScreen", bundle: nil)
+        let rootVC = launchScreenVC.instantiateViewController(withIdentifier: "splashController")
+        self.window?.rootViewController = rootVC
+        self.window?.makeKeyAndVisible()
+        Timer.scheduledTimer(timeInterval: 3, target: self, selector:#selector(dismissSplashController), userInfo: nil, repeats: false)
+    
+    }
+    
+    @objc func dismissSplashController(){
+        
+    }
 
+    // nao ta rolando...
+    
+    //cansei*/
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
